@@ -7,7 +7,7 @@
     "rating": 89,
     "bating_style": "Left-hand bat",
     "bowling_style": "N/A",
-    "price": "1100.00USD"
+    "price": "110,000USD"
   },
   {
     "player_image": "https://iili.io/qnzg76l.webp",
@@ -17,7 +17,7 @@
     "rating": 94,
     "bating_style": "Left-hand bat",
     "bowling_style": "Left-arm medium-fast",
-    "price": "850.00USD"
+    "price": "50,000USD"
   },
   {
     "player_image": "https://iili.io/qnIHTCl.webp",
@@ -27,7 +27,7 @@
     "rating": 92,
     "bating_style": "Right-hand bat",
     "bowling_style": "Right-arm offbreak",
-    "price": "920.00USD"
+    "price": "550,000USD"
   },
   {
     "player_image": "https://iili.io/qnI3Pf4.jpg",
@@ -37,7 +37,7 @@
     "rating": 87,
     "bating_style": "Right-hand bat",
     "bowling_style": "Right-arm medium",
-    "price": "550.00USD"
+    "price": "550.000USD"
   },
   {
     "player_image": "https://iili.io/qnInCXt.jpg",
@@ -47,7 +47,7 @@
     "rating": 90,
     "bating_style": "Left-hand bat",
     "bowling_style": "N/A",
-    "price": "350.00USD"
+    "price": "340,000USD"
   },
   {
     "player_image": "https://iili.io/qnIAAPI.webp",
@@ -57,7 +57,7 @@
     "rating": 93,
     "bating_style": "Left-hand bat",
     "bowling_style": "Left-arm fast-medium",
-    "price": "850.00USD"
+    "price": "850,00USD"
   },
   {
     "player_image": "https://iili.io/qnIaChb.webp",
@@ -67,7 +67,7 @@
     "rating": 91,
     "bating_style": "Left-hand bat",
     "bowling_style": "N/A",
-    "price": "650.00USD"
+    "price": "650,000USD"
   },
   {
     "player_image": "https://iili.io/qnIGNt9.jpg",
@@ -77,7 +77,7 @@
     "rating": 88,
     "bating_style": "Left-hand bat",
     "bowling_style": "Right-arm fast",
-    "price": "750.00USD"
+    "price": "750,000USD"
   },
   {
     "player_image": "https://iili.io/qnIhI7j.jpg",
@@ -87,7 +87,7 @@
     "rating": 86,
     "bating_style": "Left-hand bat",
     "bowling_style": "Right-arm offbreak",
-    "price": "800.00USD"
+    "price": "80,000USD"
   },
   {
     "player_image": "https://iili.io/qnIPXjt.webp",
@@ -97,7 +97,7 @@
     "rating": 85,
     "bating_style": "Right-hand bat",
     "bowling_style": "N/A",
-    "price": "390.00USD"
+    "price": "390,000USD"
   },
   {
     "player_image": "https://iili.io/qnIQDqF.jpg",
@@ -107,7 +107,7 @@
     "rating": 91,
     "bating_style": "Right-hand bat",
     "bowling_style": "Right-arm offbreak",
-    "price": "700.00USD"
+    "price": "78.000USD"
   },
   {
     "player_image": "https://iili.io/qnTTUtR.jpg",
@@ -117,6 +117,6 @@
     "rating": 89,
     "bating_style": "Right-hand bat",
     "bowling_style": "N/A",
-    "price": "450.00USD"
+    "price": "450.000USD"
   }
 ]
