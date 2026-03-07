@@ -14,14 +14,22 @@ function App() {
   const [toggle, setToggle] = useState(true);
   const [avialAbleBlance, setAvialAbleBlance] = useState(600000);
   const [purchasedPlayers, setPurchasedPlayers] = useState([])
-  console.log(purchasedPlayers)
+  // console.log(purchasedPlayers)
+
+  const removePlayer = (p) =>{
+    const filterData = purchasedPlayers.filter(ply => ply.player_name !== p.player_name)
+    setPurchasedPlayers(filterData)
+    setAvialAbleBlance(avialAbleBlance+parseInt(p.price.split("USD").join("").split(",").join("")))
+  }
   
   return (
     <>
       <div className="max-w-6xl mx-auto">
         <Navbar avialAbleBlance={avialAbleBlance}></Navbar>
         <div className="flex justify-between items-center font-bold">
-          <h1 className="text-2xl">Avialable Players </h1>
+          <h1 className="md:text-2xl text-[20px]">{
+            toggle===true? "Avialable Players" : `Secleted Players(${purchasedPlayers.length}/6)`
+            }</h1>
           <div className="">
             <button
               onClick={() => setToggle(true)}
@@ -33,7 +41,7 @@ function App() {
               onClick={() => setToggle(false)}
               className={`py-[10px] px-4 border border-gray-400 rounded-r-2xl border-l-0 ${toggle === false ? "bg-[#E7FE29]" : ""}`}
             >
-              Secleted <span>0</span>
+              Secleted <span>{purchasedPlayers.length}</span>
             </button>
           </div>
         </div>
@@ -46,7 +54,7 @@ function App() {
             <AvailablePrice purchasedPlayers={purchasedPlayers} setPurchasedPlayers={setPurchasedPlayers}  avialAbleBlance={avialAbleBlance} setAvialAbleBlance={setAvialAbleBlance} playersPromise={playersPromise}></AvailablePrice>
           </Suspense>
         ) : (
-          <SelectedPlayers purchasedPlayers={purchasedPlayers}></SelectedPlayers>
+          <SelectedPlayers removePlayer={removePlayer} purchasedPlayers={purchasedPlayers}></SelectedPlayers>
         )}
       </div>
     </>
