@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import userImg from "../../assets/Group.png";
 import flagImg from "../../assets/Group-1.png";
+import { toast } from "react-toastify";
 const PlayerCard = ({
   player,
   setAvialAbleBlance,
@@ -15,15 +16,19 @@ const PlayerCard = ({
       playerData.price.split("USD").join("").split(",").join(""),
     );
     if (avialAbleBlance < playerPrice) {
-      alert("Not enough coins!!");
+      toast("Not enough coins!!");
       return;
+    }
+    if(purchasedPlayers.length === 6){
+        toast('6 players already selected!')
+        return
     }
     setIsSeleted(true);
     setAvialAbleBlance(avialAbleBlance - playerPrice);
     setPurchasedPlayers([...purchasedPlayers, playerData])
   };
   return (
-    <div className="card bg-base-100 w-96 shadow-sm p-3">
+    <div className="card bg-base-100 w-96 shadow-sm p-3 ">
       <figure>
         <img
           src={player.player_image}

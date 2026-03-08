@@ -6,7 +6,7 @@ const handleRemove = () =>{
     removePlayer(player)
 }
   return (
-    <div className="border border-gray-300 rounded-xl p-2 mt-2 ">
+    <div className="border border-gray-300 rounded-xl p-2 mt-2">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <img

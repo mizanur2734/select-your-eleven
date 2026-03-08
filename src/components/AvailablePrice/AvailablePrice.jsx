@@ -11,7 +11,7 @@ const AvailablePrice = ({
   const playersData = use(playersPromise);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 mb-20">
       {playersData.map((player) => (
         <PlayerCard
           purchasedPlayers={purchasedPlayers}
