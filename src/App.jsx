@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import CricketHero from "./components/CricketHero/CricketHero";
 
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
@@ -32,6 +33,7 @@ function App() {
     <>
       <div className="max-w-6xl mx-auto">
         <Navbar avialAbleBlance={avialAbleBlance}></Navbar>
+        <CricketHero></CricketHero>
         <div className="flex justify-between items-center md:font-bold font-semibold md:px-0 px-1">
           <h1 className="md:text-2xl text-[18px]">
             {toggle === true
@@ -75,7 +77,7 @@ function App() {
         )}
       </div>
       <ToastContainer />
-      <Footer className="mt-96"></Footer>
+      <Footer></Footer>
     </>
   );
 }

@@ -28,7 +28,7 @@ const PlayerCard = ({
     setPurchasedPlayers([...purchasedPlayers, playerData])
   };
   return (
-    <div className="card bg-base-100 w-96 shadow-sm p-3 ">
+    <div className="card bg-base-100 w-96 shadow-sm p-3 mx-auto">
       <figure>
         <img
           src={player.player_image}
