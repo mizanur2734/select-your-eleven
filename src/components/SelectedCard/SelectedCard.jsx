@@ -1,12 +1,12 @@
 import React from "react";
 
 const SelectedCard = ({ player, removePlayer }) => {
-//   console.log(player);
-const handleRemove = () =>{
-    removePlayer(player)
-}
+  //   console.log(player);
+  const handleRemove = () => {
+    removePlayer(player);
+  };
   return (
-    <div className="border border-gray-300 rounded-xl p-2 mt-2">
+    <div className="border border-gray-300 rounded-xl p-2 mt-2 my-2">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <img
